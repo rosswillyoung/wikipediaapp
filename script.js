@@ -1,7 +1,7 @@
 let randurl = "https://www.wikipedia.org/wiki/Special:Random";
 
 $( "#randWiki" ).html(
-        "<a href=" + randurl + ">Click to get a random wikipedia page!</a>"
+        "<a href=" + randurl + ">Or click here to get a random wikipedia page</a>"
         );
 
 
@@ -19,7 +19,7 @@ function getWiki() {
             'action': 'opensearch',
             'search': term,
             'format': 'json',
-            'limit': 10
+            'limit': 5
         });
 
         //console.log(apiurl);
